@@ -1,20 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <!-- Contenido principal -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  
+  <div class="contenedor-transparente">
+    <h2 class="titulo">Bienvenido</h2>
+    <br>
+        <ion-input type="text" placeholder="Nombre de Usuario" [(ngModel)]="username" required></ion-input>
+        <br>
+        <ion-input type="password" placeholder="Contraseña" [(ngModel)]="password" required></ion-input>
+        <br>
+        <button class="custom-button" (click)="login()">Ingresar</button>
   </div>
+  <p>¿No tienes cuenta?<a class="link_crear_cuenta" href="">Crea una aquí!</a></p>
+  
+  
+
 </ion-content>
