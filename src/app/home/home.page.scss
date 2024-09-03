@@ -1,36 +1,35 @@
 .titulo {
   margin-bottom: 20px;
-  font-family: 'Oswald', sans-serif; /* Usa 'Oswald' como la fuente principal */
-  font-size: 40px; /* Ajusta el tamaño de la fuente según sea necesario */
-  font-weight: 700; /* Usa un peso que esté disponible, en este caso 700 para negrita */
+  font-family: 'Oswald', sans-serif;
+  font-size: 8vw;
+  font-weight: 700;
 }
 
 .contenido-principal {
-  margin-top: 100px; /* Asegura que el contenido no se superponga con el cuadro superior */
-  margin-bottom: 100px; /* Asegura que el contenido no se superponga con el cuadro inferior */
-  padding: 20px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding: 5vw;
 }
 
 .contenedor-transparente {
-  padding: 20px;
+  padding: 5vw;
   border-radius: 10px;
   width: 90%;
   max-width: 400px;
-  margin: 50px auto; /* Centrar el contenedor */
+  margin: 50px auto;
   text-align: center;
-  margin-top: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* NUEVO_________ Añadir sombra para darle más enfoque */
-  background-color: rgba(255, 255, 255, 0); /* Fondo completamente transparente */
-
+  margin-top: 20vh; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 ion-input {
-  background: rgb(0, 0, 0); /* Fondo negro para el input */
-  border-radius: 15px; /* Bordes redondeados */
-  border: 2px solid rgb(12, 200, 220); /* Color de los bordes morado */
-  --placeholder-color: cyan; /* Color del texto cuando se escribe dentro del input */
-  color: cyan; /* Color del texto dentro del input */
-  padding: 10px;
+  background: rgb(0, 0, 0);
+  border-radius: 15px;
+  border: 2px solid rgb(12, 200, 220);
+  --placeholder-color: cyan;
+  color: cyan;
+  padding: 2vh 2vw;
 }
 
 ion-input::part(native) {
@@ -38,54 +37,46 @@ ion-input::part(native) {
   border-radius: 15px;
 }
 
-/*Imagen de fondo*/
-
 ion-content {
   --background: url('/assets/img/Fondo_de_pantalla.webp') no-repeat center center / cover;
 }
 
 .custom-button {
   display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #00eaff; /* Borde celeste */
-  border-radius: 10px; /* Bordes redondeados */
-  background: linear-gradient(45deg, #d51065, #078649); /* Fondo en gradiente verde neón */
-  color: #15d8e9; /* Texto en color rosa neón */
-  font-size: 16px; /* Tamaño de fuente */
-  font-weight: bold; /* Texto en negrita */
-  text-align: center; /* Centra el texto */
-  text-decoration: none; /* Sin subrayado */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  outline: none; /* Elimina el borde del enfoque */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  padding: 2vh 4vw;
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #d51065, #078649);
+  color: #15d8e9;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .custom-button:hover {
-  background: linear-gradient(45deg, #36d759, #00e5d9); /* Fondo en gradiente más claro en hover */
-  color: #000000; /* Texto en negro para mayor contraste */
-  border-color: #00bcd4; /* Borde celeste más oscuro en hover */
+  background: linear-gradient(45deg, #36d759, #00e5d9);
+  color: #000000;
+  border-color: #00bcd4;
 }
 
 p {
-  font-size: 20px; /* Tamaño de fuente del texto */
-  text-align: center; /* Centra el texto del párrafo */
-  margin: 45% 0 0;
+  font-size: 4vw;
+  text-align: center;
+  margin: 20vh 0 0;
 }
 
 .link_crear_cuenta {
-  color: white; /* Color del texto en blanco */
-  font-weight: bold; /* Texto en negrita */
-  text-decoration: underline; /* Subrayado del texto */
-  text-decoration-color: white; /* Color del subrayado en blanco */
-  transition: color 0.3s; /* Transición suave para el color del texto */
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: white;
+  transition: color 0.3s;
 }
 
 .link_crear_cuenta:hover {
-  color: #f0f0f0; /* Color más claro del texto al pasar el cursor */
+  color: #f0f0f0;
 }
-
-
-
-
-
-
