@@ -1,33 +1,74 @@
 ion-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-header {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.FotoAuto {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.solicitar-transporte-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.solicitar-transporte-button {
+  --background: linear-gradient(45deg, #4CAF50, #45a049);
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.informacion-transporte {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+
+  ion-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #4CAF50;
   }
-  
-  .FotoAuto {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+}
+
+.datos-adicionales {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-adicionales h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+ion-item {
+  margin: 10px 0;
+  font-size: 16px;
+
+  ion-icon {
+    color: #4CAF50;
+    margin-right: 8px;
   }
-  
-  .solicitar-transporte-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .solicitar-transporte-button {
-    --background: #4CAF50;
-    --background-activated: #45a049;
-    --background-hover: #45a049;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-  }
-  
+}

@@ -1,0 +1,19 @@
+ion-content {
+  --background: #f0f0f0;
+  padding: 20px;
+}
+
+ion-toolbar {
+  --background: #4CAF50;
+  --color: white;
+}
+
+ion-item {
+  margin: 15px 0;
+}
+
+body.dark {
+  --ion-background-color: #121212;
+  --ion-text-color: #ffffff;
+  --ion-toolbar-background: #333;
+}

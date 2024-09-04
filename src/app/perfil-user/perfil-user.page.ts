@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-perfil-user',
@@ -7,14 +6,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./perfil-user.page.scss'],
 })
 export class PerfilUserPage implements OnInit {
+  user = {
+    name: 'Miguel Leyton',
+    email: 'migu.leytonr@duocuc.cl',
+    phone: '+569 1234 5678',
+    trips: 69,
+    mostFrequentDestination: 'San Joaquin',
+    lastTripDate: '2024-08-20',
+    profilePhoto: 'assets/img/user-profile.jpg'
+  };
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  goToMenu() {
-    // Redirigir al menú
-    this.router.navigate(['/menu']);
   }
 }

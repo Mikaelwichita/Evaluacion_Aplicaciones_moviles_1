@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Modo Oscuro</ion-label>
+      <ion-toggle slot="end" [(ngModel)]="darkMode" (ionChange)="toggleDarkMode()"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Notificaciones</ion-label>
+      <ion-toggle slot="end" [(ngModel)]="notificationsEnabled" (ionChange)="toggleNotifications()"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tamaño de Fuente</ion-label>
+      <ion-select [(ngModel)]="fontSize" (ionChange)="changeFontSize($event)">
+        <ion-select-option value="small">Pequeño</ion-select-option>
+        <ion-select-option value="medium">Mediano</ion-select-option>
+        <ion-select-option value="large">Grande</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>

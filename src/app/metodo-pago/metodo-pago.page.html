@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Método de Pago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Método de Pago Actual</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p *ngIf="currentPaymentMethod">Método Actual: {{ currentPaymentMethod }}</p>
+      <p *ngIf="!currentPaymentMethod">No hay método de pago actual.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let paymentMethod of paymentMethods">
+      {{ paymentMethod }}
+      <ion-button (click)="deletePaymentMethod(paymentMethod)" color="danger" fill="outline" slot="end">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="addPaymentMethod()">
+    Agregar Método de Pago
+  </ion-button>
+</ion-content>

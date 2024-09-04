@@ -8,6 +8,9 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
+  sedes: string[] = ['Sede San Joaquin', 'Sede Antonio Varas', 'Casa de Miguel Leyton Rios'];
+  selectedSede: string = '';
+  estimatedTime: string = '0 minutos'; 
 
   constructor(private router: Router, private alertController: AlertController) { } 
 
@@ -42,7 +45,30 @@ export class MenuPage implements OnInit {
   }
 
   goToProfile() {
-    // Redirigir al usuario a la página del perfil
     this.router.navigate(['/perfil-user']);
+  }
+  goToConfig() {
+    this.router.navigate(['/configuracion']);
+  }
+  goToHistory() {
+    this.router.navigate(['/historial']);
+  }
+  goToAccount() {
+    this.router.navigate(['/cuenta']);
+  }
+  goToPaymentMethod() {
+    this.router.navigate(['/metodo-pago']);
+  }
+
+  updateEstimatedTime() {
+    if (this.selectedSede === 'Sede San Joaquin') {
+      this.estimatedTime = '15 minutos';
+    } else if (this.selectedSede === 'Sede Antonio Varas') {
+      this.estimatedTime = '20 minutos';
+    } else if (this.selectedSede === 'Casa de Miguel Leyton Rios') {
+      this.estimatedTime = '69 minutos';
+    } else {
+      this.estimatedTime = '0 minutos';
+    }
   }
 }
