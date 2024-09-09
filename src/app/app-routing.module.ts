@@ -1,10 +1,11 @@
+// app-routing.module.ts
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'bienvenida',  // Cambiar 'home' por 'bienvenida'
     pathMatch: 'full'
   },
   {
@@ -18,7 +19,8 @@ const routes: Routes = [
   {
     path: 'perfil-user',
     loadChildren: () => import('./perfil-user/perfil-user.module').then(m => m.PerfilUserPageModule)
-  },  {
+  },
+  {
     path: 'configuracion',
     loadChildren: () => import('./configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
   },
@@ -42,7 +44,6 @@ const routes: Routes = [
     path: 'bienvenida',
     loadChildren: () => import('./bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
   }
-
 ];
 
 @NgModule({

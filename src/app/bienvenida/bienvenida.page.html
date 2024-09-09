@@ -6,6 +6,7 @@
   
 </head>
 
+<!-- bienvenida.page.html -->
 <ion-content [fullscreen]="true">
 
   <div class="background-container">
@@ -16,8 +17,9 @@
     <h1>Bienvenido <br>Prepuber</h1>
     <div class="bottom-bar"></div>
     <div class="button-container">
-      <button class="custom-button">Iniciar sesión</button>
-      <button class="custom-button2">Únete</button>
+      <button class="custom-button" (click)="goToLogin()">Iniciar sesión</button>
+      <button class="custom-button2" (click)="goToSignup()">Únete</button>
     </div>
   </div>
+
 </ion-content>
