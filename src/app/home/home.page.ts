@@ -27,8 +27,12 @@ export class HomePage {
   }
 
   login() {
+    const storedPassword = localStorage.getItem('password');  // Obtener la contraseña almacenada
+    const defaultPassword = 'contraseña123';  // Contraseña por defecto, si no hay una en localStorage
+    const validPassword = storedPassword || defaultPassword;  // Usa la guardada o la predeterminada
+
     // Validar las credenciales ingresadas
-    if (this.username === 'Migu7_e' && this.password === 'contraseña123') {
+    if (this.username === 'Migu7_e' && this.password === validPassword) {
       // Alerta de éxito
       this.presentAlert('Éxito', `Inicio de sesión exitoso. ¡Bienvenido, ${this.username}!`);
       

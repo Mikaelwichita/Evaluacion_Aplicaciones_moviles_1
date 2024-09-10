@@ -32,6 +32,24 @@
     </ion-card-content>
   </ion-card>
 
+  <!-- Aquí agregamos los campos para la nueva contraseña -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Cambiar Contraseña</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Nueva Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="newPassword" placeholder="Nueva Contraseña"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Confirmar Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="confirmPassword" placeholder="Confirmar Contraseña"></ion-input>
+      </ion-item>
+      <ion-button expand="full" color="primary" (click)="changePassword()">Cambiar Contraseña</ion-button>
+    </ion-card-content>
+  </ion-card>
+
   <ion-button expand="full" color="primary" (click)="toggleEdit()">
     {{ editing ? 'Guardar Cambios' : 'Editar Información' }}
   </ion-button>

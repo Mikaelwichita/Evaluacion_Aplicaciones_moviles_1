@@ -14,6 +14,9 @@ export class CuentaPage implements OnInit {
     phone: '',
   };
 
+  newPassword: string = '';  // Nueva variable para la nueva contraseña
+  confirmPassword: string = '';  // Nueva variable para la confirmación
+
   editing = false;
 
   constructor(private alertController: AlertController) { }
@@ -51,5 +54,33 @@ export class CuentaPage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  // Nueva función para cambiar la contraseña
+  async changePassword() {
+    if (this.newPassword === this.confirmPassword) {
+      // Guardar la nueva contraseña en localStorage
+      localStorage.setItem('password', this.newPassword);
+      console.log('Contraseña cambiada exitosamente');
+
+      const alert = await this.alertController.create({
+        header: 'Éxito',
+        message: 'Tu contraseña ha sido cambiada exitosamente.',
+        buttons: ['OK'],
+      });
+      await alert.present();
+
+      // Resetear los campos de contraseña
+      this.newPassword = '';
+      this.confirmPassword = '';
+    } else {
+      // Mostrar una alerta si las contraseñas no coinciden
+      const alert = await this.alertController.create({
+        header: 'Error',
+        message: 'Las contraseñas no coinciden. Inténtalo nuevamente.',
+        buttons: ['OK'],
+      });
+      await alert.present();
+    }
   }
 }
