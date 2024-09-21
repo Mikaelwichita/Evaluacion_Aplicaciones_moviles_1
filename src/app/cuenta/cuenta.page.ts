@@ -14,8 +14,8 @@ export class CuentaPage implements OnInit {
     phone: '',
   };
 
-  newPassword: string = '';  // Nueva variable para la nueva contraseña
-  confirmPassword: string = '';  // Nueva variable para la confirmación
+  newPassword: string = '';  // Para la creacion de la nueva contraseña
+  confirmPassword: string = '';  // Para confirmarla
 
   editing = false;
 
@@ -56,7 +56,7 @@ export class CuentaPage implements OnInit {
     await alert.present();
   }
 
-  // Nueva función para cambiar la contraseña
+  // Opcion de cambiar la contraseña
   async changePassword() {
     if (this.newPassword === this.confirmPassword) {
       // Guardar la nueva contraseña en localStorage

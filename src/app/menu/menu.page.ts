@@ -27,14 +27,12 @@ export class MenuPage implements OnInit {
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
-            // El usuario canceló la acción
             console.log('Salida cancelada');
           }
         },
         {
           text: 'Salir',
           handler: () => {
-            // Redirigir al usuario a la página de inicio
             this.router.navigate(['/home']);
           }
         }

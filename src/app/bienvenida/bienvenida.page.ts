@@ -1,6 +1,6 @@
-// bienvenida.page.ts
+
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';  // Importa el Router
+import { Router } from '@angular/router';  
 
 @Component({
   selector: 'app-bienvenida',
@@ -11,12 +11,12 @@ export class BienvenidaPage {
 
   constructor(private router: Router) {}
 
-  // Navega al Home (Login)
+  // Ir al Home (Login)
   goToLogin() {
     this.router.navigate(['/home']);
   }
 
-  // Navega al Registro
+  // Ir a Registro
   goToSignup() {
     this.router.navigate(['/registro']);
   }
