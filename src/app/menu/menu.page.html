@@ -2,7 +2,7 @@
   <ion-menu content-id="main-content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Selecciona alguna opcion</ion-title>
+        <ion-title>Selecciona alguna opción</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -25,16 +25,16 @@
         </ion-item>
         <ion-item (click)="goToConfig()">
           <ion-icon name="settings-outline" slot="start"></ion-icon>
-          <ion-label>Configuracion</ion-label>
+          <ion-label>Configuración</ion-label>
         </ion-item>
         <ion-item (click)="logout()"> 
           <ion-icon name="log-out-outline" slot="start"></ion-icon>
           <ion-label>Salir</ion-label>
         </ion-item>
       </ion-list>
-      <img src="assets\img\LogoDuoc.png" alt="">
-      <h2>Patrocina</h2>
-      <img src="assets\img\FundacionDJ.png" alt="">
+      <img class="LogoDuoc" src="assets/img/LogoDuoc.png" alt="Logo Duoc">
+      <h2 class="patrocina-text">Patrocina</h2>
+      <img class="FundacionDJ" src="assets/img/FundacionDJ.png" alt="Fundación DJ">
     </ion-content>
   </ion-menu>
   
@@ -49,12 +49,13 @@
     </ion-header>
     <ion-content>
       <h2 class="titulo">Bienvenido</h2>
-      <div><img class="FotoAuto" src="assets\img\VehiculoTransporte.png"alt=""></div>
+      <div><img class="FotoAuto" src="assets/img/VehiculoTransporte.png" alt="Vehículo"></div>
       <div class="solicitar-transporte-container">
         <ion-button expand="block" size="large" class="solicitar-transporte-button">
           Solicita un transporte
         </ion-button>
       </div>
+
       <div class="datos-adicionales">
         <h2>Información Actual</h2>
         <ion-item>

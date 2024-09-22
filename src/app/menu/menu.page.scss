@@ -72,3 +72,84 @@ ion-item {
     margin-right: 8px;
   }
 }
+
+/* Animaciones */
+
+/* Animacion ZoomIn para Autito */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.FotoAuto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Animacion fade-in para Logo Duoc */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.LogoDuoc {
+  width: 200px;;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Animacion slide-up para el texto Patrocina */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.patrocina-text {
+  text-align: center;
+  font-size: 1.5rem;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+
+/* Animacion rotate para la Fundación DJ */
+@keyframes rotateIn {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.FundacionDJ {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: rotateIn 1.5s ease-in-out;
+}
